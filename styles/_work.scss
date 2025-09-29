@@ -12,7 +12,7 @@
 
     &__title {
       margin: 0 0 80px 0;
-      @include m.font(60px, 400, normal, v.$color_white);
+      @include m.font(60px, 400, v.$color_white);
 
       @media (max-width: v.$media_min) {
         display: none;

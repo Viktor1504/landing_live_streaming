@@ -17,7 +17,7 @@
     margin: 0 auto;
 
     .hero__title {
-      @include m.font(120px, 700, normal, v.$color_black);
+      @include m.font(120px, 700, v.$color_black);
       line-height: 120px;
     }
 
@@ -25,7 +25,7 @@
       width: 380px;
       height: 80px;
       background-color: v.$color_black;
-      @include m.font(28px, 500, normal, v.$color_white);
+      @include m.font(28px, 500, v.$color_white);
       border-radius: 45px;
       border: none;
       cursor: pointer;
@@ -46,7 +46,7 @@
       height: 500px;
 
       .hero__title {
-        @include m.font(100px, 700, normal, v.$color_black);
+        @include m.font(100px, 700, v.$color_black);
       }
 
       .hero__action-btn {
@@ -59,13 +59,13 @@
       height: 400px;
 
       .hero__title {
-        @include m.font(75px, 700, normal, v.$color_black);
+        @include m.font(75px, 700, v.$color_black);
       }
 
       .hero__action-btn {
         width: 260px;
         height: 60px;
-        @include m.font(18px, 400, normal, v.$color_white);
+        @include m.font(18px, 400, v.$color_white);
       }
     }
 
@@ -74,7 +74,7 @@
       height: 280px;
 
       .hero__title {
-        @include m.font(45px, 500, normal, v.$color_black);
+        @include m.font(45px, 500, v.$color_black);
       }
     }
   }
@@ -86,7 +86,7 @@
     height: 60px;
     background-color: color.adjust(v.$color_white, $alpha: -0.85);
     border-radius: 20px;
-    @include m.d-flex(end, center, nowrap, row, 10px);
+    @include m.d-flex(end, center, row, 10px);
 
     &-img {
       width: 126px;
@@ -101,7 +101,7 @@
       line-height: 1;
       text-transform: uppercase;
       @include m.d-flex(center, center, nowrap);
-      @include m.font(14px, 400, normal, v.$color_black);
+      @include m.font(14px, 400, v.$color_black);
     }
 
     &-btn {
@@ -109,7 +109,7 @@
       background: none;
       border: none;
       text-transform: uppercase;
-      @include m.font(25px, 400, normal, v.$color_black);
+      @include m.font(25px, 400, v.$color_black);
       @extend %hover-light;
 
       &:focus-visible {
@@ -131,10 +131,10 @@
         border-right: none;
         border-bottom: 1px solid v.$color_white;
         line-height: 1.3;
-        @include m.font(12px, 400, normal, v.$color_black);
+        @include m.font(12px, 400, v.$color_black);
       }
       &-btn {
-        @include m.font(30px, 400, normal, v.$color_black);
+        @include m.font(30px, 400, v.$color_black);
         padding: 15px 0;
       }
     }
@@ -145,7 +145,7 @@
 
       &-content {
         padding: 10px 10px 10px 100px;
-        @include m.font(11px, 400, normal, v.$color_black);
+        @include m.font(11px, 400, v.$color_black);
       }
     }
   }
@@ -155,7 +155,7 @@
 
     &-content {
       position: relative;
-      @include m.font(16px, 500, normal, v.$color_white);
+      @include m.font(16px, 500, v.$color_white);
       writing-mode: vertical-rl;
       cursor: pointer;
 

@@ -14,15 +14,13 @@
 
   @if $inset > -1 {
     inset: $inset;
-  }
-
-  @else {
+  } @else {
     #{$top-or-bottom}: $value1;
     #{$left-or-right}: $value2;
   }
 }
 
-@mixin font($size: 16px, $weight: 400, $style: normal, $color: #fff) {
+@mixin font($size: 16px, $weight: 400, $color: #fff,  $style: normal) {
   font: {
     size: $size;
     weight: $weight;

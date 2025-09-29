@@ -309,9 +309,9 @@ figure {
   display: flex;
   justify-content: end;
   align-items: center;
-  flex-wrap: nowrap;
-  flex-direction: row;
-  column-gap: 10px;
+  flex-wrap: row;
+  flex-direction: 10px;
+  column-gap: 0;
   row-gap: 0;
 }
 .hero__notify-img {
