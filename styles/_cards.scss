@@ -75,7 +75,7 @@
   }
 
   &__btn {
-    @include m.position(absolute, 1, -1, bottom, left, -20px, -30px);
+    @include m.position(absolute, 1, null, bottom, left, -20px, -30px);
     width: 120px;
     height: 90px;
     border-radius: 20px;
