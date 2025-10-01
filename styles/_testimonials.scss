@@ -37,7 +37,7 @@
 
     &__left-btn {
       @extend %slider-button;
-      @include m.position(absolute, 1, -1, top, left, 100px, -130px);
+      @include m.position(absolute, 1, null, top, left, 100px, -130px);
 
       &-icon {
         @extend %slider-button-icon;
@@ -47,7 +47,7 @@
 
     &__right-btn {
       @extend %slider-button;
-      @include m.position(absolute, 1, -1, top, right, 100px, -100px);
+      @include m.position(absolute, 1, null, top, right, 100px, -100px);
 
       &-icon {
         @extend %slider-button-icon;
@@ -67,7 +67,7 @@
     }
 
     &__points {
-      @include m.position(absolute, 1, -1, bottom, left, 0, 50%);
+      @include m.position(absolute, 1, null, bottom, left, 0, 50%);
       @include m.d-flex(start, center, nowrap, row, 9px, 0);
       translate: -50% 0;
 

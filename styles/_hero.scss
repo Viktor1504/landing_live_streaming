@@ -29,7 +29,7 @@
       border-radius: 45px;
       border: none;
       cursor: pointer;
-      @include m.position(absolute, 1, -1, bottom, right, 18px, -30px);
+      @include m.position(absolute, 1, null, bottom, right, 18px, -30px);
 
       &:hover {
         background-color: color.adjust(v.$color_black, $alpha: -0.35);
@@ -50,7 +50,7 @@
       }
 
       .hero__action-btn {
-        @include m.position(absolute, 1, -1, bottom, left, 0, 15px);
+        @include m.position(absolute, 1, null, bottom, left, 0, 15px);
       }
     }
 
@@ -91,7 +91,7 @@
     &-img {
       width: 126px;
       height: 198px;
-      @include m.position(absolute, 1, -1, top, left, -75px, -35px);
+      @include m.position(absolute, 1, null, top, left, -75px, -35px);
     }
 
     &-content {
@@ -140,7 +140,7 @@
     }
     @media (max-width: v.$media_sm) {
       &-img {
-        @include m.position(absolute, 1, -1, top, left, -45px, -15px);
+        @include m.position(absolute, 1, null, top, left, -45px, -15px);
       }
 
       &-content {
@@ -151,7 +151,7 @@
   }
 
   &__scroll {
-    @include m.position(absolute, 1, -1, bottom, left, 200px, 10px);
+    @include m.position(absolute, 1, null, bottom, left, 200px, 10px);
 
     &-content {
       position: relative;
@@ -162,7 +162,7 @@
       &::after {
         content: '';
         display: block;
-        @include m.position(absolute, 1, -1, top, left, 100px, 8px);
+        @include m.position(absolute, 1, null, top, left, 100px, 8px);
         width: 1px;
         height: 75px;
         background-color: v.$color_white;
@@ -170,11 +170,11 @@
     }
 
     @media (max-width: v.$media_lg) {
-      @include m.position(absolute, 1, -1, bottom, left, 130px, 10px);
+      @include m.position(absolute, 1, null, bottom, left, 130px, 10px);
     }
 
     @media (max-width: v.$media_sm) {
-      @include m.position(absolute, 1, -1, bottom, left, 200px, 10px);
+      @include m.position(absolute, 1, null, bottom, left, 200px, 10px);
     }
   }
 
