@@ -7,6 +7,13 @@
   }
 }
 
+%hover-black-icon {
+  &:hover {
+    cursor: pointer;
+    fill: v.$color_black;
+  }
+}
+
 %hover-light {
   &:hover {
     cursor: pointer;
@@ -14,9 +21,3 @@
   }
 }
 
-%hover-black-icon {
-  &:hover {
-    cursor: pointer;
-    fill: v.$color_black;
-  }
-}
