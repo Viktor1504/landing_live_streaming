@@ -29,6 +29,10 @@ blockquote {
   margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .container {
   max-width: 1440px;
   margin: 0 auto;
@@ -211,14 +215,14 @@ blockquote {
   color: #000;
 }
 
-.hero__notify-btn:hover {
-  cursor: pointer;
-  color: #fff;
-}
-
 .header .nav .globe__link-icon:hover {
   cursor: pointer;
   fill: #000;
+}
+
+.hero__notify-btn:hover {
+  cursor: pointer;
+  color: #fff;
 }
 
 .header {
@@ -319,6 +323,84 @@ blockquote {
   height: 28px;
   fill: #fff;
 }
+@media (max-width: 768px) {
+  .header .nav__links,
+  .header .nav .covid,
+  .header .nav .globe {
+    display: none;
+  }
+}
+
+.mobile-navigation {
+  display: none;
+}
+.mobile-navigation__burger {
+  position: absolute;
+  z-index: 10;
+  top: 13px;
+  right: 20px;
+}
+.mobile-navigation__burger-icon {
+  width: 33px;
+  height: 22px;
+  stroke: #fff;
+}
+.mobile-navigation__burger-icon:hover {
+  cursor: pointer;
+  stroke: #000;
+}
+.mobile-navigation__toggler {
+  display: none;
+}
+.mobile-navigation__toggler:checked + .nav {
+  translate: 0;
+}
+.mobile-navigation .nav {
+  padding: 100px 70px 0;
+  position: fixed;
+  z-index: 999;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  translate: 100% 0;
+  transition: translate 0.22s;
+}
+.mobile-navigation .nav__list {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  column-gap: 0;
+  row-gap: 20px;
+}
+.mobile-navigation .nav__list-item-link {
+  font-size: 36px;
+  font-weight: 400;
+  font-style: normal;
+  color: #fff;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+.mobile-navigation .nav__close {
+  position: absolute;
+  z-index: 10;
+  top: 18px;
+  right: 23px;
+}
+.mobile-navigation .nav__close-icon {
+  width: 25px;
+  height: 22px;
+  stroke: #fff;
+}
+.mobile-navigation .nav__close-icon:hover {
+  cursor: pointer;
+  stroke: #000;
+}
+@media (max-width: 768px) {
+  .mobile-navigation {
+    display: block;
+  }
+}
 
 .hero {
   position: relative;
@@ -373,6 +455,7 @@ blockquote {
     font-weight: 700;
     font-style: normal;
     color: #000;
+    line-height: 100px;
   }
   .hero__content .hero__action-btn {
     position: absolute;
@@ -391,6 +474,7 @@ blockquote {
     font-weight: 700;
     font-style: normal;
     color: #000;
+    line-height: 80px;
   }
   .hero__content .hero__action-btn {
     width: 260px;
@@ -404,13 +488,14 @@ blockquote {
 @media (max-width: 576px) {
   .hero__content {
     max-width: 350px;
-    height: 280px;
+    height: 300px;
   }
   .hero__content .hero__title {
     font-size: 45px;
-    font-weight: 500;
+    font-weight: 700;
     font-style: normal;
     color: #000;
+    line-height: 40px;
   }
 }
 .hero__notify {

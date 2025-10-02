@@ -47,6 +47,7 @@
 
       .hero__title {
         @include m.font(100px, 700, v.$color_black);
+        line-height: 100px;
       }
 
       .hero__action-btn {
@@ -60,6 +61,7 @@
 
       .hero__title {
         @include m.font(75px, 700, v.$color_black);
+        line-height: 80px;
       }
 
       .hero__action-btn {
@@ -71,10 +73,11 @@
 
     @media (max-width: v.$media_sm) {
       max-width: 350px;
-      height: 280px;
+      height: 300px;
 
       .hero__title {
-        @include m.font(45px, 500, v.$color_black);
+        @include m.font(45px, 700, v.$color_black);
+        line-height: 40px;
       }
     }
   }
